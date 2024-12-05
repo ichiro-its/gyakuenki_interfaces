@@ -17,8 +17,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/CenterPoint.msg"
-  "msg/Confidence.msg"
+  "msg/Point3.msg"
   "msg/ProjectedObject.msg"
   "msg/ProjectedObjects.msg")
 
