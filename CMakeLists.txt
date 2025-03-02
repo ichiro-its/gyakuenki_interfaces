@@ -19,6 +19,8 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Point3.msg"
   "msg/ProjectedObject.msg"
-  "msg/ProjectedObjects.msg")
+  "msg/ProjectedObjects.msg"
+  "srv/GetCameraOffset.srv"
+  "srv/UpdateCameraOffset.srv")
 
 ament_package()
