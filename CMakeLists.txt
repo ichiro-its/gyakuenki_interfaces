@@ -15,14 +15,12 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
-find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Point3.msg"
   "msg/ProjectedObject.msg"
   "msg/ProjectedObjects.msg"
   "srv/GetCameraOffset.srv"
-  "srv/UpdateCameraOffset.srv"
-  DEPENDENCIES std_msgs)
+  "srv/UpdateCameraOffset.srv")
 
 ament_package()
