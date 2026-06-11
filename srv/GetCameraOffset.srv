@@ -2,7 +2,10 @@
 float32 position_x
 float32 position_y
 float32 position_z
-float32 roll
-float32 pitch
-float32 yaw
+float32 roll_center
+float32 pitch_center
+float32 yaw_center
+float32 roll_side
+float32 pitch_side
+float32 yaw_side
 bool status
